@@ -1,3 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  height: 171px;
+}
+.header .nav {
+  padding: 94px 34px 35px;
+  display: flex;
+}
+.header .nav .nav-elements {
+  margin-left: 66px;
+}
+.header .nav .nav-elements .nav-pages {
+  font-size: 12px;
+  margin-right: 33px;
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.header .nav .sign-up-button {
+  margin-top: 3px;
+  width: 101px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px black solid;
+  margin-right: 1px;
+  margin-left: auto;
+  display: flex;
+  cursor: pointer;
+}
+.header .nav .sign-up-button .sign-up-link {
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.body .first-block {
+  margin: 152px 0;
+}
+.body .first-block .top-text {
+  text-align: center;
+}
+.body .first-block .top-text .head-text h2 {
+  height: 70px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+.body .first-block .top-text .head-text h1 {
+  position: relative;
+  margin-top: -14px;
+  height: 103px;
+  font-weight: 900;
+  font-size: 88px;
+  line-height: 103px;
+  background: linear-gradient(98.45deg, #53DBDE 2.39%, #51BCE2 97.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.body .first-block .top-text p {
+  margin: 23px auto;
+  height: 23px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body .first-block .top-text .button-how {
+  width: 194px;
+  height: 47px;
+  background-color: black;
+  border-radius: 23.5px;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  cursor: pointer;
+}
+.body .first-block .top-text .button-how .how-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: auto;
+}
+.body .first-block .top-text .button-how:hover {
+  border: 1px black solid;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+}
+.body .first-block .top-text .button-how:hover .how-link {
+  color: #000000;
+}
+.body .first-block .card-images {
+  justify-content: center;
+  align-items: center;
+  margin: 42px auto;
+  width: 1170px;
+  height: 519px;
+  display: flex;
+}
+.body .first-block .card-images .card {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  filter: drop-shadow(0px 40px 40px rgba(0, 0, 0, 0.25));
+}
 
 /*# sourceMappingURL=style.css.map */
