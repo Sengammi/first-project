@@ -11,12 +11,18 @@ a{
   color: black;
   text-decoration: none;
 }
+
+
+
 .header{
   height: 171px;
   .nav{
-    padding: 94px 34px 35px;
+    padding: 97px 34px 35px;
     display: flex;
     .logo{
+      cursor: pointer;
+      width: 101px;
+      height: 39px;
     }
     .nav-elements{
       margin-left: 66px;
@@ -26,6 +32,12 @@ a{
         margin-right: 33px;
         margin-top: 8px;
         color: rgba(0, 0, 0, 0.8);
+        &:hover, &.selected{
+          color: rgba(0, 0, 0, 0.4);
+        }
+        &.last{
+          margin-right: 0px;
+        }
       }
     }
     .sign-up-button{
@@ -49,7 +61,68 @@ a{
     }
   }
 }
-.body{
+
+
+
+.footer{
+  height: 100px;
+  padding-top: 32px;
+  .button-nav{
+    margin: 0 34px;
+    display: flex;
+    align-items: center;
+    .logo{
+      width: 101px;
+      height: 39px;
+      cursor: pointer;
+
+    }
+    .nav-elements{
+      justify-content: center;
+      text-align: center;
+      margin: auto auto;
+      .nav-pages{
+        margin-right: 33px;
+        height: 11px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        &:hover, &.selected{
+          color: rgba(0, 0, 0, 0.4);
+        }
+        &.last{
+          margin-right: 0px;
+        }
+      }
+    }
+    .connection{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin: auto 2px auto 0;
+      .connection-icon{
+        margin: auto 15px auto 0;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// Home page body
+
+
+.body.home-page{
+  .home-gradient-background{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    top: 0;
+    background: linear-gradient(180deg, #F8F9FA 0%, #D8DFE1 100%);
+    z-index: -1;
+  }
   justify-content: center;
   .first-block{
     margin: 152px 0;
@@ -118,6 +191,33 @@ a{
       width: 1170px;
       height: 519px;
       display: flex;
+      position: relative;
+      .left-image{
+        left: 0;
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        #left-card{
+          position: absolute;
+          display: flex;
+          left: 0;
+        }
+      }
+      .right-image{
+        right: 0;
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        #right-card{
+          position: absolute;
+          display: flex;
+          right: 7px;
+        }
+      }
       .card{
         position: absolute;
         display: flex;
@@ -213,8 +313,8 @@ a{
             height: 455px;
             background: #242D30;
             border-radius: 15px 15px 25px 25px;
-            left: 0px;
             z-index: 1;
+            position: absolute;
             .top-bar{
               height: 34px;
               background: #303D41;
@@ -330,12 +430,12 @@ a{
                     border-radius: 5px;
                     display: flex;
                     p{
-                      color: white;
+                      margin: auto;
                       height: 14px;
                       font-weight: 700;
                       font-size: 12px;
                       line-height: 14px;
-                      margin: auto;
+                      color: #FFFFFF;
                     }
                   }
                 }
@@ -379,6 +479,7 @@ a{
                 border-radius: 5px;
                 margin-bottom: 11px;
                 display: flex;
+                cursor: pointer;
                 p{
                   margin: auto 16px;
                   height: 16px;
@@ -662,7 +763,46 @@ a{
         margin-right: 37px;
         position: relative;
         .text{
+          margin: 37px;
+          h1{
+            height: 94px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #000000;
 
+          }
+          p{
+            margin: 24px 0;
+            height: 57px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.8);
+          }
+          .button{
+            width: 264px;
+            height: 43px;
+            border: 1px solid #000000;
+            border-radius: 100px;
+            display: flex;
+            cursor: pointer;
+            a{
+              margin: auto;
+              height: 19px;
+
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 19px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+            &:active{
+              background: #000000;
+              a{
+                color: #FFFFFF;
+              }
+            }
+          }
         }
         .elements{
           position: absolute;
@@ -682,11 +822,13 @@ a{
             position: relative;
             .SIM-img{
               position: absolute;
+              width: 39px;
+              height: 45px;
               left: 139px;
               top: 26px;
-              border: 1px solid #000000;
-              border-radius: 6px;
               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              border-radius: 6px;
+              border: 1px solid #000000;
             }
             .card-title{
               position: absolute;
@@ -713,7 +855,108 @@ a{
         height: 604px;
         background: linear-gradient(138.71deg, #011016 0%, #33427A 100%);
         border-radius: 20px;
+        position: relative;
+        .text{
+          margin: 37px;
+          h1{
+            height: 47px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #FFFFFF;
+          }
+          p{
+            margin: 28px 20px 34px 0;
+            height: 38px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.8);
+          }
+          .button{
+            width: 322px;
+            height: 43px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100px;
+            display: flex;
+            cursor: pointer;
+            a{
+              margin: auto;
+              height: 19px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 19px;
+              color: rgba(255, 255, 255, 0.8);
+            }
+            &:active{
+              background: #FFFFFF;
+              border: 1px solid #FFFFFF;
+              a{
+                color: rgba(0, 0, 0, 0.8);
+              }
+            }
+          }
+        }
+        .elements{
+          width: 324px;
+          height: 260px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          .top{
+            width: 324px;
+            height: 40px;
+            background: linear-gradient(90.87deg, #313D41 0%, #263235 100%);
+            border-radius: 8px 0px 0px 0px;
+            display: flex;
+            .three-dots{
+              margin-left: 21px;
+              display: flex;
+              align-items: center;
+              .dot{
+                margin: auto 7px auto 0;
+                width: 12px;
+                height: 12px;
+                background: #252F32;
+                border-radius: 100px;
+              }
+            }
+          }
+          .bottom{
+            width: 324px;
+            height: 220px;
+            background: #252F32;
+            border-radius: 0px 0px 20px 0px;
+            display: flex;
+            .left-bar{
+              width: 62px;
+              height: 100%;
+              p{
+                margin-top: 6px;
+                margin-left: 37px;
+                width: 9px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: rgba(255, 255, 255, 0.2);
+              }
+            }
+            .central-bar{
+              overflow: hidden;
+              .face-code{
+                margin: 10px auto 0px 6px;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+
+
+
+
+
+// NFT creators page body
+

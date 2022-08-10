@@ -18,8 +18,13 @@ a {
   height: 171px;
 }
 .header .nav {
-  padding: 94px 34px 35px;
+  padding: 97px 34px 35px;
   display: flex;
+}
+.header .nav .logo {
+  cursor: pointer;
+  width: 101px;
+  height: 39px;
 }
 .header .nav .nav-elements {
   margin-left: 66px;
@@ -29,6 +34,12 @@ a {
   margin-right: 33px;
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.8);
+}
+.header .nav .nav-elements .nav-pages:hover, .header .nav .nav-elements .nav-pages.selected {
+  color: rgba(0, 0, 0, 0.4);
+}
+.header .nav .nav-elements .nav-pages.last {
+  margin-right: 0px;
 }
 .header .nav .sign-up-button {
   margin-top: 3px;
@@ -50,22 +61,75 @@ a {
   font-weight: bold;
 }
 
-.body {
+.footer {
+  height: 100px;
+  padding-top: 32px;
+}
+.footer .button-nav {
+  margin: 0 34px;
+  display: flex;
+  align-items: center;
+}
+.footer .button-nav .logo {
+  width: 101px;
+  height: 39px;
+  cursor: pointer;
+}
+.footer .button-nav .nav-elements {
+  justify-content: center;
+  text-align: center;
+  margin: auto auto;
+}
+.footer .button-nav .nav-elements .nav-pages {
+  margin-right: 33px;
+  height: 11px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer .button-nav .nav-elements .nav-pages:hover, .footer .button-nav .nav-elements .nav-pages.selected {
+  color: rgba(0, 0, 0, 0.4);
+}
+.footer .button-nav .nav-elements .nav-pages.last {
+  margin-right: 0px;
+}
+.footer .button-nav .connection {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: auto 2px auto 0;
+}
+.footer .button-nav .connection .connection-icon {
+  margin: auto 15px auto 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.body.home-page {
   justify-content: center;
 }
-.body .first-block {
+.body.home-page .home-gradient-background {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  top: 0;
+  background: linear-gradient(180deg, #F8F9FA 0%, #D8DFE1 100%);
+  z-index: -1;
+}
+.body.home-page .first-block {
   margin: 152px 0;
 }
-.body .first-block .top-text {
+.body.home-page .first-block .top-text {
   text-align: center;
 }
-.body .first-block .top-text .head-text h2 {
+.body.home-page .first-block .top-text .head-text h2 {
   height: 70px;
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
 }
-.body .first-block .top-text .head-text h1 {
+.body.home-page .first-block .top-text .head-text h1 {
   position: relative;
   margin-top: -14px;
   height: 103px;
@@ -77,7 +141,7 @@ a {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
-.body .first-block .top-text p {
+.body.home-page .first-block .top-text p {
   margin: 23px auto;
   height: 23px;
   font-weight: 400;
@@ -85,7 +149,7 @@ a {
   line-height: 23px;
   color: rgba(0, 0, 0, 0.8);
 }
-.body .first-block .top-text .button-how {
+.body.home-page .first-block .top-text .button-how {
   width: 194px;
   height: 47px;
   background-color: black;
@@ -95,46 +159,73 @@ a {
   display: flex;
   cursor: pointer;
 }
-.body .first-block .top-text .button-how .how-link {
+.body.home-page .first-block .top-text .button-how .how-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
   margin: auto;
 }
-.body .first-block .top-text .button-how:hover {
+.body.home-page .first-block .top-text .button-how:hover {
   border: 1px black solid;
   color: black;
   background-color: rgba(0, 0, 0, 0);
 }
-.body .first-block .top-text .button-how:hover .how-link {
+.body.home-page .first-block .top-text .button-how:hover .how-link {
   color: #000000;
 }
-.body .first-block .card-images {
+.body.home-page .first-block .card-images {
   justify-content: center;
   align-items: center;
   margin: 42px auto;
   width: 1170px;
   height: 519px;
   display: flex;
+  position: relative;
 }
-.body .first-block .card-images .card {
+.body.home-page .first-block .card-images .left-image {
+  left: 0;
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  align-items: center;
+  display: flex;
+}
+.body.home-page .first-block .card-images .left-image #left-card {
+  position: absolute;
+  display: flex;
+  left: 0;
+}
+.body.home-page .first-block .card-images .right-image {
+  right: 0;
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.body.home-page .first-block .card-images .right-image #right-card {
+  position: absolute;
+  display: flex;
+  right: 7px;
+}
+.body.home-page .first-block .card-images .card {
   position: absolute;
   display: flex;
   text-align: center;
   filter: drop-shadow(0px 40px 20px rgba(0, 0, 0, 0.4));
 }
-.body .first-block .company-bottom-text {
+.body.home-page .first-block .company-bottom-text {
   margin: 159px 0px;
   text-align: center;
   justify-content: center;
 }
-.body .first-block .company-bottom-text p {
+.body.home-page .first-block .company-bottom-text p {
   height: 23px;
   font-size: 20px;
   line-height: 23px;
 }
-.body .first-block .company-bottom-text .trust-company {
+.body.home-page .first-block .company-bottom-text .trust-company {
   margin-top: 70px;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -142,44 +233,44 @@ a {
   filter: grayscale(100%);
   opacity: 0.7;
 }
-.body .first-block .company-bottom-text .trust-company .company-top, .body .first-block .company-bottom-text .trust-company .company-bottom {
+.body.home-page .first-block .company-bottom-text .trust-company .company-top, .body.home-page .first-block .company-bottom-text .trust-company .company-bottom {
   text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.body .first-block .company-bottom-text .trust-company .company-element {
+.body.home-page .first-block .company-bottom-text .trust-company .company-element {
   margin: auto 19px auto 0;
 }
-.body .first-block .company-bottom-text .trust-company .company-element.last {
+.body.home-page .first-block .company-bottom-text .trust-company .company-element.last {
   margin: auto 0;
 }
-.body .first-block .company-bottom-text .trust-company .company-bottom {
+.body.home-page .first-block .company-bottom-text .trust-company .company-bottom {
   position: relative;
   margin-top: -4px;
 }
-.body .first-block .company-bottom-text .trust-company .company-bottom .company-element {
+.body.home-page .first-block .company-bottom-text .trust-company .company-bottom .company-element {
   margin: auto 33px auto 0;
 }
-.body .first-block .company-bottom-text .trust-company .company-bottom .company-element.last {
+.body.home-page .first-block .company-bottom-text .trust-company .company-bottom .company-element.last {
   margin: auto 0;
 }
-.body .first-block .company-bottom-text .trust-company .company-bottom .company-element.first, .body .first-block .company-bottom-text .trust-company .company-bottom .company-element beforehand {
+.body.home-page .first-block .company-bottom-text .trust-company .company-bottom .company-element.first, .body.home-page .first-block .company-bottom-text .trust-company .company-bottom .company-element beforehand {
   margin: auto 34px auto 0;
 }
-.body .second-block {
+.body.home-page .second-block {
   width: 1170px;
   justify-content: center;
   margin: 0 auto;
 }
-.body .second-block .coinage {
+.body.home-page .second-block .coinage {
   margin: 0 auto;
   justify-content: center;
 }
-.body .second-block .coinage .head-info {
+.body.home-page .second-block .coinage .head-info {
   margin-bottom: 43px;
 }
-.body .second-block .coinage .head-info h4 {
+.body.home-page .second-block .coinage .head-info h4 {
   height: 23px;
   font-weight: 500;
   font-size: 20px;
@@ -187,7 +278,7 @@ a {
   text-align: center;
   color: #08BDD4;
 }
-.body .second-block .coinage .head-info h1 {
+.body.home-page .second-block .coinage .head-info h1 {
   margin-top: 14px;
   height: 94px;
   font-weight: 700;
@@ -196,7 +287,7 @@ a {
   text-align: center;
   color: #000000;
 }
-.body .second-block .coinage .coinage-container {
+.body.home-page .second-block .coinage .coinage-container {
   width: 1170px;
   height: 526px;
   background: linear-gradient(101.45deg, #35D9EB 0%, #678EBF 100%);
@@ -204,32 +295,32 @@ a {
   margin: 0 auto;
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part {
+.body.home-page .second-block .coinage .coinage-container .left-part {
   height: 100%;
   align-items: end;
   display: flex;
   position: relative;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 {
   width: 430px;
   height: 455px;
   background: #242D30;
   border-radius: 15px 15px 25px 25px;
-  left: 0px;
   z-index: 1;
+  position: absolute;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .top-bar {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .top-bar {
   height: 34px;
   background: #303D41;
   border-radius: 15px 15px 0px 0px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements {
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content {
   margin: 48px auto;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h3 {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h3 {
   margin-top: 10px;
   height: 19px;
   font-weight: 700;
@@ -237,17 +328,17 @@ a {
   line-height: 19px;
   color: rgba(255, 255, 255, 0.8);
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h4 {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h4 {
   height: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.4);
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button {
   margin-top: 24px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button .button {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button .button {
   width: 355px;
   height: 38px;
   background: #303D41;
@@ -255,55 +346,55 @@ a {
   margin-bottom: 15px;
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button .button p {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content .fake-button .button p {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.8);
   margin: auto 16px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 {
   position: absolute;
   width: 348px;
   height: 390px;
   left: 292px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .top-bar {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .top-bar {
   height: 38px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 6px 6px 0px 0px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .top-bar .three-dots {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .top-bar .three-dots {
   margin-left: 14px;
   display: flex;
   align-items: center;
   height: 100%;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .top-bar .three-dots .dot {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .top-bar .three-dots .dot {
   width: 12px;
   height: 12px;
   background: rgba(48, 61, 65, 0.4);
   border-radius: 100px;
   margin: auto 4px auto 0;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements {
   background: #FFFFFF;
   height: 352px;
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content {
   margin: 52px auto;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .window-2-img {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .window-2-img {
   width: 138px;
   height: 53px;
   margin: 0 auto;
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button {
   margin-top: 43px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text {
   width: 278px;
   height: 46px;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -311,13 +402,13 @@ a {
   display: flex;
   margin-bottom: 14px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text .svg-mail {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text .svg-mail {
   fill: rgba(0, 0, 0, 0.4);
   width: 16px;
   height: 13px;
   margin: auto 6px auto 12px;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text p {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text p {
   height: 14px;
   font-weight: 500;
   font-size: 12px;
@@ -325,33 +416,33 @@ a {
   color: rgba(0, 0, 0, 0.6);
   margin: auto 0;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .button {
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .button {
   width: 278px;
   height: 46px;
   background: #000000;
   border-radius: 5px;
   display: flex;
 }
-.body .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .button p {
-  color: white;
+.body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .button p {
+  margin: auto;
   height: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  margin: auto;
+  color: #FFFFFF;
 }
-.body .second-block .coinage .coinage-container .right-part {
+.body.home-page .second-block .coinage .coinage-container .right-part {
   display: flex;
   position: relative;
   width: 529px;
   height: 526px;
   margin: 0 0 0 auto;
 }
-.body .second-block .coinage .coinage-container .right-part .content {
+.body.home-page .second-block .coinage .coinage-container .right-part .content {
   margin: 58px 81px 0px 61px;
   color: white;
 }
-.body .second-block .coinage .coinage-container .right-part .content h2 {
+.body.home-page .second-block .coinage .coinage-container .right-part .content h2 {
   width: 377px;
   height: 76px;
   font-weight: 700;
@@ -359,7 +450,7 @@ a {
   line-height: 38px;
   color: #FFFFFF;
 }
-.body .second-block .coinage .coinage-container .right-part .content h3 {
+.body.home-page .second-block .coinage .coinage-container .right-part .content h3 {
   margin-top: 24px;
   width: 380px;
   height: 84px;
@@ -368,18 +459,19 @@ a {
   line-height: 130.7%;
   color: #FFFFFF;
 }
-.body .second-block .coinage .coinage-container .right-part .content .input-info {
+.body.home-page .second-block .coinage .coinage-container .right-part .content .input-info {
   margin-top: 26px;
 }
-.body .second-block .coinage .coinage-container .right-part .content .input-info .input {
+.body.home-page .second-block .coinage .coinage-container .right-part .content .input-info .input {
   width: 380px;
   height: 46px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   margin-bottom: 11px;
   display: flex;
+  cursor: pointer;
 }
-.body .second-block .coinage .coinage-container .right-part .content .input-info .input p {
+.body.home-page .second-block .coinage .coinage-container .right-part .content .input-info .input p {
   margin: auto 16px;
   height: 16px;
   font-weight: 500;
@@ -387,14 +479,14 @@ a {
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
 }
-.body .second-block .coinage .coinage-container .right-part .content .input-info .input.selected {
+.body.home-page .second-block .coinage .coinage-container .right-part .content .input-info .input.selected {
   background: rgba(255, 255, 255, 0.6);
 }
-.body .second-block .coinage .coinage-container .right-part .content .input-info .input.selected p {
+.body.home-page .second-block .coinage .coinage-container .right-part .content .input-info .input.selected p {
   font-weight: 700;
   color: #FFFFFF;
 }
-.body .second-block .security {
+.body.home-page .second-block .security {
   width: 1170px;
   height: 468px;
   border-radius: 25px;
@@ -402,63 +494,63 @@ a {
   margin: 304px auto 0;
   justify-content: center;
 }
-.body .second-block .security .left-part, .body .second-block .security .right-part {
+.body.home-page .second-block .security .left-part, .body.home-page .second-block .security .right-part {
   width: 50%;
 }
-.body .second-block .security .left-part .head-info h4 {
+.body.home-page .second-block .security .left-part .head-info h4 {
   height: 23px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #08BDD4;
 }
-.body .second-block .security .left-part .head-info h1 {
+.body.home-page .second-block .security .left-part .head-info h1 {
   height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #000000;
 }
-.body .second-block .security .left-part p {
+.body.home-page .second-block .security .left-part p {
   margin: 17px 70px 43px 0;
 }
-.body .second-block .security .left-part .elements .element {
+.body.home-page .second-block .security .left-part .elements .element {
   align-items: center;
   display: flex;
   margin-bottom: 30px;
 }
-.body .second-block .security .left-part .elements .element.last {
+.body.home-page .second-block .security .left-part .elements .element.last {
   margin: 0;
 }
-.body .second-block .security .left-part .elements .element .security-svg {
+.body.home-page .second-block .security .left-part .elements .element .security-svg {
   margin: auto 18px auto 0;
 }
-.body .second-block .security .left-part .elements .element .text-container h3 {
+.body.home-page .second-block .security .left-part .elements .element .text-container h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.8);
   margin-right: 95px;
 }
-.body .second-block .security .left-part .elements .element .text-container p {
+.body.home-page .second-block .security .left-part .elements .element .text-container p {
   margin: 4px 0 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.8);
 }
-.body .second-block .security .right-part {
+.body.home-page .second-block .security .right-part {
   display: flex;
   position: relative;
 }
-.body .second-block .security .right-part .container {
+.body.home-page .second-block .security .right-part .container {
   width: 569px;
   height: 423px;
   margin: 35px 1px 0 15px;
   display: flex;
   position: relative;
 }
-.body .second-block .security .right-part .container .export-element {
+.body.home-page .second-block .security .right-part .container .export-element {
   display: flex;
   position: absolute;
   width: 248px;
@@ -469,12 +561,12 @@ a {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.body .second-block .security .right-part .container .export-element .export-svg {
+.body.home-page .second-block .security .right-part .container .export-element .export-svg {
   width: 39px;
   height: 39px;
   margin: auto 16px auto 7px;
 }
-.body .second-block .security .right-part .container .export-element p {
+.body.home-page .second-block .security .right-part .container .export-element p {
   margin: auto 0;
   height: 16px;
   font-weight: 400;
@@ -482,135 +574,135 @@ a {
   line-height: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
-.body .second-block .security .right-part .container .window {
+.body.home-page .second-block .security .right-part .container .window {
   width: 557px;
   height: 423px;
   background: linear-gradient(108.98deg, #66A4E6 0%, #5DDDE9 79.14%);
   border-radius: 15px;
 }
-.body .second-block .security .right-part .container .window .site-example {
+.body.home-page .second-block .security .right-part .container .window .site-example {
   height: 373px;
   margin-left: 68px;
   margin-top: 50px;
 }
-.body .second-block .security .right-part .container .window .site-example .top {
+.body.home-page .second-block .security .right-part .container .window .site-example .top {
   height: 36px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 6px 0px 0px 0px;
 }
-.body .second-block .security .right-part .container .window .site-example .top .three-dots {
+.body.home-page .second-block .security .right-part .container .window .site-example .top .three-dots {
   margin-left: 12px;
   display: flex;
   align-items: center;
   height: 100%;
 }
-.body .second-block .security .right-part .container .window .site-example .top .three-dots .dot {
+.body.home-page .second-block .security .right-part .container .window .site-example .top .three-dots .dot {
   width: 12px;
   height: 12px;
   background: rgba(48, 61, 65, 0.2);
   border-radius: 100px;
   margin: auto 4px auto 0;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom {
   display: flex;
   height: 337px;
   background: #FFFFFF;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part {
   width: 183px;
   height: 100%;
   display: flex;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container {
   margin-top: 24px;
   margin-left: 23px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .site-logo {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .site-logo {
   width: 92px;
   height: 36px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements {
   margin-top: 11px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element {
   display: flex;
   margin-bottom: 9px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element .circle {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element .circle {
   width: 16px;
   height: 16px;
   background: #E5E8ED;
   border-radius: 100px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element .fake-text {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .left-part .site-container .elements .element .fake-text {
   margin-left: 12px;
   width: 86px;
   height: 6px;
   background: #E5E8ED;
   border-radius: 2px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .right-part {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .right-part {
   height: 100%;
   display: flex;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container {
   margin-top: 97px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row {
   display: flex;
   margin-bottom: 22px;
   justify-content: end;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row .site-item {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row .site-item {
   width: 85px;
   height: 85px;
   background: #E5E8ED;
   border-radius: 4px;
   margin-right: 25px;
 }
-.body .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row .site-item.last {
+.body.home-page .second-block .security .right-part .container .window .site-example .bottom .right-part .site-container .row .site-item.last {
   margin: 0;
 }
-.body .third-block {
+.body.home-page .third-block {
   width: 1334px;
   justify-content: center;
   margin: 417px auto 190px;
   display: flex;
 }
-.body .third-block .left-part, .body .third-block .right-part {
+.body.home-page .third-block .left-part, .body.home-page .third-block .right-part {
   width: 50%;
 }
-.body .third-block .right-part .container {
+.body.home-page .third-block .right-part .container {
   margin: 43px 68px 0 57px;
 }
-.body .third-block .right-part .container .header {
+.body.home-page .third-block .right-part .container .header {
   height: 117px;
 }
-.body .third-block .right-part .container .header h4 {
+.body.home-page .third-block .right-part .container .header h4 {
   height: 23px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #08BDD4;
 }
-.body .third-block .right-part .container .header h1 {
+.body.home-page .third-block .right-part .container .header h1 {
   height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #000000;
 }
-.body .third-block .right-part .container p {
+.body.home-page .third-block .right-part .container p {
   margin-top: 19px;
   margin-bottom: 33px;
 }
-.body .third-block .right-part .container .elements {
+.body.home-page .third-block .right-part .container .elements {
   display: flex;
 }
-.body .third-block .right-part .container .elements .left-row {
+.body.home-page .third-block .right-part .container .elements .left-row {
   margin-right: 20px;
 }
-.body .third-block .right-part .container .elements .element {
+.body.home-page .third-block .right-part .container .elements .element {
   width: 261px;
   height: 42px;
   background: linear-gradient(90deg, #B7D7F4 0%, rgba(183, 216, 244, 0) 85.25%);
@@ -618,7 +710,7 @@ a {
   display: flex;
   margin-bottom: 8px;
 }
-.body .third-block .right-part .container .elements .element p {
+.body.home-page .third-block .right-part .container .elements .element p {
   height: 19px;
   font-weight: 600;
   font-size: 16px;
@@ -626,16 +718,16 @@ a {
   color: rgba(0, 0, 0, 0.8);
   margin: auto 12px;
 }
-.body .fourth-block {
+.body.home-page .fourth-block {
   width: 100%;
   background: #E2E6E8;
   display: flex;
 }
-.body .fourth-block .container {
+.body.home-page .fourth-block .container {
   margin: 148px auto 44px;
   display: flex;
 }
-.body .fourth-block .container .left-block {
+.body.home-page .fourth-block .container .left-block {
   width: 566px;
   height: 604px;
   background: #FFFFFF;
@@ -643,14 +735,54 @@ a {
   margin-right: 37px;
   position: relative;
 }
-.body .fourth-block .container .left-block .elements {
+.body.home-page .fourth-block .container .left-block .text {
+  margin: 37px;
+}
+.body.home-page .fourth-block .container .left-block .text h1 {
+  height: 94px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+.body.home-page .fourth-block .container .left-block .text p {
+  margin: 24px 0;
+  height: 57px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.home-page .fourth-block .container .left-block .text .button {
+  width: 264px;
+  height: 43px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  display: flex;
+  cursor: pointer;
+}
+.body.home-page .fourth-block .container .left-block .text .button a {
+  margin: auto;
+  height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.home-page .fourth-block .container .left-block .text .button:active {
+  background: #000000;
+}
+.body.home-page .fourth-block .container .left-block .text .button:active a {
+  color: #FFFFFF;
+}
+.body.home-page .fourth-block .container .left-block .elements {
   position: absolute;
   right: 0;
   bottom: 0;
   display: flex;
   align-items: end;
 }
-.body .fourth-block .container .left-block .elements .element-card {
+.body.home-page .fourth-block .container .left-block .elements .element-card {
   width: 214px;
   height: 318px;
   background: linear-gradient(162.44deg, #FFFFFF 4.55%, #C5D1D5 97.3%);
@@ -659,22 +791,24 @@ a {
   display: flex;
   position: relative;
 }
-.body .fourth-block .container .left-block .elements .element-card .SIM-img {
+.body.home-page .fourth-block .container .left-block .elements .element-card .SIM-img {
   position: absolute;
+  width: 39px;
+  height: 45px;
   left: 139px;
   top: 26px;
-  border: 1px solid #000000;
-  border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 6px;
+  border: 1px solid #000000;
 }
-.body .fourth-block .container .left-block .elements .element-card .card-title {
+.body.home-page .fourth-block .container .left-block .elements .element-card .card-title {
   position: absolute;
   width: 24px;
   height: 72px;
   left: 21px;
   bottom: 0;
 }
-.body .fourth-block .container .left-block .elements .element-card p {
+.body.home-page .fourth-block .container .left-block .elements .element-card p {
   left: -50.5px;
   top: 100.5px;
   font-weight: 400;
@@ -684,11 +818,105 @@ a {
   transform: rotate(90deg);
   position: absolute;
 }
-.body .fourth-block .container .right-block {
+.body.home-page .fourth-block .container .right-block {
   width: 566px;
   height: 604px;
   background: linear-gradient(138.71deg, #011016 0%, #33427A 100%);
   border-radius: 20px;
+  position: relative;
+}
+.body.home-page .fourth-block .container .right-block .text {
+  margin: 37px;
+}
+.body.home-page .fourth-block .container .right-block .text h1 {
+  height: 47px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+.body.home-page .fourth-block .container .right-block .text p {
+  margin: 28px 20px 34px 0;
+  height: 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.body.home-page .fourth-block .container .right-block .text .button {
+  width: 322px;
+  height: 43px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  display: flex;
+  cursor: pointer;
+}
+.body.home-page .fourth-block .container .right-block .text .button a {
+  margin: auto;
+  height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.body.home-page .fourth-block .container .right-block .text .button:active {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.body.home-page .fourth-block .container .right-block .text .button:active a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.home-page .fourth-block .container .right-block .elements {
+  width: 324px;
+  height: 260px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.body.home-page .fourth-block .container .right-block .elements .top {
+  width: 324px;
+  height: 40px;
+  background: linear-gradient(90.87deg, #313D41 0%, #263235 100%);
+  border-radius: 8px 0px 0px 0px;
+  display: flex;
+}
+.body.home-page .fourth-block .container .right-block .elements .top .three-dots {
+  margin-left: 21px;
+  display: flex;
+  align-items: center;
+}
+.body.home-page .fourth-block .container .right-block .elements .top .three-dots .dot {
+  margin: auto 7px auto 0;
+  width: 12px;
+  height: 12px;
+  background: #252F32;
+  border-radius: 100px;
+}
+.body.home-page .fourth-block .container .right-block .elements .bottom {
+  width: 324px;
+  height: 220px;
+  background: #252F32;
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+}
+.body.home-page .fourth-block .container .right-block .elements .bottom .left-bar {
+  width: 62px;
+  height: 100%;
+}
+.body.home-page .fourth-block .container .right-block .elements .bottom .left-bar p {
+  margin-top: 6px;
+  margin-left: 37px;
+  width: 9px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.2);
+}
+.body.home-page .fourth-block .container .right-block .elements .bottom .central-bar {
+  overflow: hidden;
+}
+.body.home-page .fourth-block .container .right-block .elements .bottom .central-bar .face-code {
+  margin: 10px auto 0px 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
