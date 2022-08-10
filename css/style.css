@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.first-block, .second-block, .third-block, .fourth-block, .fifth-block {
+  width: 100%;
+}
+
 .header {
   height: 171px;
 }
@@ -118,13 +122,13 @@ a {
   z-index: -1;
 }
 .body.home-page .first-block {
-  margin: 152px 0;
+  width: 1170px;
+  margin: 152px auto;
 }
 .body.home-page .first-block .top-text {
   text-align: center;
 }
 .body.home-page .first-block .top-text .head-text h2 {
-  height: 70px;
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
@@ -132,7 +136,6 @@ a {
 .body.home-page .first-block .top-text .head-text h1 {
   position: relative;
   margin-top: -14px;
-  height: 103px;
   font-weight: 900;
   font-size: 88px;
   line-height: 103px;
@@ -143,7 +146,6 @@ a {
 }
 .body.home-page .first-block .top-text p {
   margin: 23px auto;
-  height: 23px;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -271,7 +273,6 @@ a {
   margin-bottom: 43px;
 }
 .body.home-page .second-block .coinage .head-info h4 {
-  height: 23px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -280,7 +281,6 @@ a {
 }
 .body.home-page .second-block .coinage .head-info h1 {
   margin-top: 14px;
-  height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -322,14 +322,12 @@ a {
 }
 .body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h3 {
   margin-top: 10px;
-  height: 19px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.8);
 }
 .body.home-page .second-block .coinage .coinage-container .left-part .window-1 .window-elements .content h4 {
-  height: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -409,7 +407,6 @@ a {
   margin: auto 6px auto 12px;
 }
 .body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .input-text p {
-  height: 14px;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -425,7 +422,6 @@ a {
 }
 .body.home-page .second-block .coinage .coinage-container .left-part .window-2 .window-elements .content .fake-button .button p {
   margin: auto;
-  height: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -444,7 +440,6 @@ a {
 }
 .body.home-page .second-block .coinage .coinage-container .right-part .content h2 {
   width: 377px;
-  height: 76px;
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
@@ -453,7 +448,6 @@ a {
 .body.home-page .second-block .coinage .coinage-container .right-part .content h3 {
   margin-top: 24px;
   width: 380px;
-  height: 84px;
   font-weight: 500;
   font-size: 16px;
   line-height: 130.7%;
@@ -473,7 +467,6 @@ a {
 }
 .body.home-page .second-block .coinage .coinage-container .right-part .content .input-info .input p {
   margin: auto 16px;
-  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -498,14 +491,12 @@ a {
   width: 50%;
 }
 .body.home-page .second-block .security .left-part .head-info h4 {
-  height: 23px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #08BDD4;
 }
 .body.home-page .second-block .security .left-part .head-info h1 {
-  height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -568,7 +559,6 @@ a {
 }
 .body.home-page .second-block .security .right-part .container .export-element p {
   margin: auto 0;
-  height: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -664,10 +654,14 @@ a {
   margin: 0;
 }
 .body.home-page .third-block {
+  width: 100%;
+  margin: 417px 0 190px;
+}
+.body.home-page .third-block .block-content {
+  margin: 0 auto;
   width: 1334px;
-  justify-content: center;
-  margin: 417px auto 190px;
   display: flex;
+  justify-content: center;
 }
 .body.home-page .third-block .left-part, .body.home-page .third-block .right-part {
   width: 50%;
@@ -679,14 +673,12 @@ a {
   height: 117px;
 }
 .body.home-page .third-block .right-part .container .header h4 {
-  height: 23px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #08BDD4;
 }
 .body.home-page .third-block .right-part .container .header h1 {
-  height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -711,7 +703,6 @@ a {
   margin-bottom: 8px;
 }
 .body.home-page .third-block .right-part .container .elements .element p {
-  height: 19px;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -739,7 +730,6 @@ a {
   margin: 37px;
 }
 .body.home-page .fourth-block .container .left-block .text h1 {
-  height: 94px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -747,7 +737,6 @@ a {
 }
 .body.home-page .fourth-block .container .left-block .text p {
   margin: 24px 0;
-  height: 57px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -763,7 +752,6 @@ a {
 }
 .body.home-page .fourth-block .container .left-block .text .button a {
   margin: auto;
-  height: 19px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -829,7 +817,6 @@ a {
   margin: 37px;
 }
 .body.home-page .fourth-block .container .right-block .text h1 {
-  height: 47px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -837,7 +824,6 @@ a {
 }
 .body.home-page .fourth-block .container .right-block .text p {
   margin: 28px 20px 34px 0;
-  height: 38px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -853,7 +839,6 @@ a {
 }
 .body.home-page .fourth-block .container .right-block .text .button a {
   margin: auto;
-  height: 19px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -917,6 +902,742 @@ a {
 }
 .body.home-page .fourth-block .container .right-block .elements .bottom .central-bar .face-code {
   margin: 10px auto 0px 6px;
+}
+
+.body.nft-creators-page .first-block {
+  width: 1170px;
+  margin: 47px auto 115px;
+}
+.body.nft-creators-page .first-block .payment-credit-card {
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block, .body.nft-creators-page .first-block .payment-credit-card .right-block {
+  width: 50%;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .head-text {
+  margin-top: 67px;
+  margin-right: 82px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .head-text h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #08BDD4;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .head-text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block p {
+  margin-top: 17px;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons {
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-start {
+  margin-right: 16px;
+  width: 95px;
+  height: 39px;
+  background: linear-gradient(97.04deg, #22BBC8 9.28%, #24D7A7 92.55%);
+  border-radius: 23.5px;
+  display: flex;
+  cursor: pointer;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-start a {
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-demo {
+  width: 177px;
+  height: 39px;
+  border: 1px solid #000000;
+  border-radius: 23.5px;
+  display: flex;
+  cursor: pointer;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-demo a {
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-demo:active {
+  background: #000000;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .buttons .button-demo:active a {
+  color: #FFFFFF;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .card-logos {
+  margin-top: 21px;
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .card-logos #mir {
+  margin-right: 17px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .left-block .card-logos #visa {
+  margin-right: 23px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 140px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window {
+  width: 439px;
+  height: 428.55px;
+  background: #242D30;
+  border-radius: 15px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .top {
+  width: 100%;
+  height: 32px;
+  background: #303D41;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .top .three-dots {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .top .three-dots .dot {
+  margin: auto 7px auto 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container {
+  margin: 36px 36px 0 122px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item {
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item .nft-name {
+  margin-top: 17px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item .nft-name h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item .nft-name h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item .nft-element {
+  width: 87px;
+  height: 87px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-item .nft-element .nft-image {
+  margin: auto;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-price {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 25px;
+  display: flex;
+  margin-top: 18px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-price .left-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-price .right-text {
+  margin-left: auto;
+  text-align: end;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-buttons {
+  margin-top: 27px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-buttons .button-buy {
+  height: 37px;
+  background: #303D41;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 14px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-buttons .button-buy a {
+  margin: auto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-buttons .button-wallet {
+  height: 37px;
+  border: 1px solid #303D41;
+  border-radius: 5px;
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-window .bottom .container .nft-buttons .button-wallet a {
+  margin: auto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 249px;
+  height: 502px;
+  padding: 11px 13px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-border {
+  position: absolute;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 11px 13px;
+  padding: 23px 13px;
+  background: linear-gradient(167.82deg, #A7F0F9 0%, #8EA4BB 100%);
+  mix-blend-mode: normal;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements {
+  margin-top: 27px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements .input-card, .body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements .input-fio {
+  margin-bottom: 12px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements .button-buy {
+  margin-top: 27px;
+  width: 100%;
+  height: 37px;
+  background: #000000;
+  border-radius: 8px;
+  display: flex;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements .button-buy a {
+  margin: auto;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .input-elements .input-title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements .logo {
+  width: 93px;
+  height: 36px;
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements h5 {
+  margin-top: 21px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.body.nft-creators-page .first-block .payment-credit-card .right-block .example-phone .phone-screen .elements h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .first-block .benefits {
+  margin-top: 213px;
+  display: flex;
+}
+.body.nft-creators-page .first-block .benefits .left-box, .body.nft-creators-page .first-block .benefits .central-box, .body.nft-creators-page .first-block .benefits .right-box {
+  width: 338px;
+  height: 224px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+.body.nft-creators-page .first-block .benefits .left-box h3, .body.nft-creators-page .first-block .benefits .central-box h3, .body.nft-creators-page .first-block .benefits .right-box h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  border-bottom: 1px;
+  margin-right: 5px;
+}
+.body.nft-creators-page .first-block .benefits .left-box p, .body.nft-creators-page .first-block .benefits .central-box p, .body.nft-creators-page .first-block .benefits .right-box p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .first-block .benefits .left-box {
+  justify-content: left;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 49px 23px 0;
+}
+.body.nft-creators-page .first-block .benefits .left-box h3 {
+  margin-bottom: 10px;
+}
+.body.nft-creators-page .first-block .benefits .central-box {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px 23px 0;
+}
+.body.nft-creators-page .first-block .benefits .right-box {
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: right;
+  padding: 30px 23px 0;
+}
+.body.nft-creators-page .second-block {
+  padding: 72px 0;
+  display: flex;
+  margin: 0 auto;
+  background: #E2E6E8;
+}
+.body.nft-creators-page .second-block .container {
+  margin: 0 auto;
+  display: flex;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text p {
+  height: 23px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company {
+  margin-top: 70px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-top, .body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-element {
+  margin: auto 19px auto 0;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-element.last {
+  margin: auto 0;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom {
+  position: relative;
+  margin-top: -4px;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom .company-element {
+  margin: auto 33px auto 0;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom .company-element.last {
+  margin: auto 0;
+}
+.body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom .company-element.first, .body.nft-creators-page .second-block .container .company-bottom-text .trust-company .company-bottom .company-element beforehand {
+  margin: auto 34px auto 0;
+}
+.body.nft-creators-page .third-block {
+  margin-top: 226px;
+}
+.body.nft-creators-page .third-block .wallet-block .container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block, .body.nft-creators-page .third-block .wallet-block .container .right-block {
+  width: 50%;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block {
+  display: flex;
+  align-items: center;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements {
+  margin: auto 82px auto 0;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #08BDD4;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: justify;
+  color: #000000;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements p {
+  margin-top: 17px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements .button {
+  width: 92px;
+  height: 39px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 23.5px;
+  display: flex;
+}
+.body.nft-creators-page .third-block .wallet-block .container .left-block .elements .button a {
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block {
+  padding-right: 30px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top {
+  display: flex;
+  align-items: end;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card {
+  margin-right: 40px;
+  margin-top: auto;
+  position: relative;
+  width: 317px;
+  height: 206px;
+  background: #FFFFFF;
+  box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  display: flex;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content {
+  margin: 23px auto 0;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item {
+  display: flex;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item .nft-name h2 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item .nft-name h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8B8B8B;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item .nft-name h4 {
+  margin: 10px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #08BDD4;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item .nft-element {
+  width: 96px;
+  height: 96px;
+  left: 168px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: flex;
+  margin-left: auto;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-item .nft-element .nft-image {
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  border-radius: 8px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-price {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  width: 267px;
+  height: 28px;
+  display: flex;
+  margin-top: 18px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-price .left-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .first-card .content .nft-price .right-text {
+  margin-left: auto;
+  text-align: end;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card {
+  position: relative;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card .content {
+  width: 198px;
+  height: 301px;
+  background: linear-gradient(162.44deg, #FFFFFF 4.55%, #C5D1D5 97.3%);
+  box-shadow: -19px 2px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  position: relative;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card .content .element-card .SIM-img {
+  width: 30px;
+  height: 35px;
+  left: 115px;
+  top: 26px;
+  position: absolute;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card .content .element-card .mir-logo {
+  left: 27px;
+  top: 221px;
+  position: absolute;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card .content .element-card p {
+  left: -27px;
+  top: 82px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: rotate(90deg);
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .top .second-card .content .element-card h6 {
+  left: 136px;
+  top: 47px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: rotate(90deg);
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom {
+  padding-top: 30px;
+  padding-left: 85px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card {
+  width: 100%;
+  height: 317px;
+  background: linear-gradient(119.89deg, #36D9EB 3.18%, #6790C0 89.93%);
+  box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 0 36px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .input-card {
+  padding-top: 36px;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .input-card .input-title {
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .button-buy {
+  margin-top: 25px;
+  width: 100%;
+  height: 52px;
+  background: #000000;
+  border-radius: 8px;
+  display: flex;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .button-buy a {
+  margin: auto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .low-text {
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+}
+.body.nft-creators-page .third-block .wallet-block .container .right-block .bottom .third-card .low-text h6 {
+  margin: auto 0 auto 7px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.phone-input-element-type1, .phone-input-element-type2 {
+  text-align: left;
+}
+.phone-input-element-type1 .up-input, .phone-input-element-type2 .up-input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+.phone-input-element-type1 .down-input, .phone-input-element-type2 .down-input {
+  border-radius: 0 0 8px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1 .solo-input, .phone-input-element-type2 .solo-input {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1 .up-input, .phone-input-element-type1 .down-input, .phone-input-element-type1 .solo-input, .phone-input-element-type2 .up-input, .phone-input-element-type2 .down-input, .phone-input-element-type2 .solo-input {
+  height: 33px;
+  width: 100%;
+  display: flex;
+  background: #FFFFFF;
+  position: relative;
+}
+.phone-input-element-type1 .up-input .half-input, .phone-input-element-type1 .down-input .half-input, .phone-input-element-type1 .solo-input .half-input, .phone-input-element-type2 .up-input .half-input, .phone-input-element-type2 .down-input .half-input, .phone-input-element-type2 .solo-input .half-input {
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+.phone-input-element-type1 .up-input .input-area, .phone-input-element-type1 .down-input .input-area, .phone-input-element-type1 .solo-input .input-area, .phone-input-element-type2 .up-input .input-area, .phone-input-element-type2 .down-input .input-area, .phone-input-element-type2 .solo-input .input-area {
+  width: 100%;
+  display: flex;
+  padding: 0 9px;
+}
+.phone-input-element-type1 .up-input .input-area.first, .phone-input-element-type1 .down-input .input-area.first, .phone-input-element-type1 .solo-input .input-area.first, .phone-input-element-type2 .up-input .input-area.first, .phone-input-element-type2 .down-input .input-area.first, .phone-input-element-type2 .solo-input .input-area.first {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1 .up-input .input-area::after, .phone-input-element-type1 .down-input .input-area::after, .phone-input-element-type1 .solo-input .input-area::after, .phone-input-element-type2 .up-input .input-area::after, .phone-input-element-type2 .down-input .input-area::after, .phone-input-element-type2 .solo-input .input-area::after {
+  display: flex;
+  margin-top: 14px;
+  margin-right: -5px;
+  margin-left: auto;
+  align-items: center;
+  content: " ";
+  background-image: url("../svg/bottom-arrow.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+}
+.phone-input-element-type1 .up-input .input-area h4, .phone-input-element-type1 .down-input .input-area h4, .phone-input-element-type1 .solo-input .input-area h4, .phone-input-element-type2 .up-input .input-area h4, .phone-input-element-type2 .down-input .input-area h4, .phone-input-element-type2 .solo-input .input-area h4 {
+  margin: auto 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.phone-input-element-type1 .up-input .input-area h4 span, .phone-input-element-type1 .down-input .input-area h4 span, .phone-input-element-type1 .solo-input .input-area h4 span, .phone-input-element-type2 .up-input .input-area h4 span, .phone-input-element-type2 .down-input .input-area h4 span, .phone-input-element-type2 .solo-input .input-area h4 span {
+  font-size: 12px;
+}
+.phone-input-element-type1 .up-input .input-area p, .phone-input-element-type1 .down-input .input-area p, .phone-input-element-type1 .solo-input .input-area p, .phone-input-element-type2 .up-input .input-area p, .phone-input-element-type2 .down-input .input-area p, .phone-input-element-type2 .solo-input .input-area p {
+  margin: auto 6px auto 1px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1 .up-input .input-area .credit-card-svg, .phone-input-element-type1 .down-input .input-area .credit-card-svg, .phone-input-element-type1 .solo-input .input-area .credit-card-svg, .phone-input-element-type2 .up-input .input-area .credit-card-svg, .phone-input-element-type2 .down-input .input-area .credit-card-svg, .phone-input-element-type2 .solo-input .input-area .credit-card-svg {
+  width: 12px;
+  margin-left: 1.5px;
+  margin-right: 8.5px;
+}
+
+.phone-input-element-type1-alt {
+  text-align: left;
+}
+.phone-input-element-type1-alt .up-input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+.phone-input-element-type1-alt .down-input {
+  border-radius: 0 0 8px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1-alt .solo-input {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1-alt .up-input, .phone-input-element-type1-alt .down-input, .phone-input-element-type1-alt .solo-input {
+  height: 51px;
+  width: 100%;
+  display: flex;
+  background: #FFFFFF;
+  position: relative;
+}
+.phone-input-element-type1-alt .up-input .half-input, .phone-input-element-type1-alt .down-input .half-input, .phone-input-element-type1-alt .solo-input .half-input {
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+.phone-input-element-type1-alt .up-input .input-area, .phone-input-element-type1-alt .down-input .input-area, .phone-input-element-type1-alt .solo-input .input-area {
+  width: 100%;
+  display: flex;
+}
+.phone-input-element-type1-alt .up-input .input-area.first, .phone-input-element-type1-alt .down-input .input-area.first, .phone-input-element-type1-alt .solo-input .input-area.first {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1-alt .up-input .input-area::after, .phone-input-element-type1-alt .down-input .input-area::after, .phone-input-element-type1-alt .solo-input .input-area::after {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 25px;
+  align-items: center;
+  content: " ";
+  background-image: url("../svg/bottom-arrow.svg");
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 20px;
+  transform: scale(1.4);
+}
+.phone-input-element-type1-alt .up-input .input-area h4, .phone-input-element-type1-alt .down-input .input-area h4, .phone-input-element-type1-alt .solo-input .input-area h4 {
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.phone-input-element-type1-alt .up-input .input-area h4 span, .phone-input-element-type1-alt .down-input .input-area h4 span, .phone-input-element-type1-alt .solo-input .input-area h4 span {
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.phone-input-element-type1-alt .up-input .input-area p, .phone-input-element-type1-alt .down-input .input-area p, .phone-input-element-type1-alt .solo-input .input-area p {
+  margin: auto 14px auto 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.phone-input-element-type1-alt .up-input .input-area .credit-card-svg, .phone-input-element-type1-alt .down-input .input-area .credit-card-svg, .phone-input-element-type1-alt .solo-input .input-area .credit-card-svg {
+  width: 18px;
+  margin-left: 18px;
+  margin-right: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
