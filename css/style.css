@@ -1555,13 +1555,13 @@ a {
   background: #242E31;
   align-items: center;
   display: flex;
-  padding: 0 41px;
   margin-bottom: 98px;
 }
 .body.nft-creators-page .fourth-block .container {
   margin: 0 auto;
 }
 .body.nft-creators-page .fourth-block .container .top {
+  padding: 0 41px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -1602,6 +1602,18 @@ a {
   width: 1px;
   position: absolute;
   background-color: #FFFFFF;
+}
+.body.nft-creators-page .fourth-block .container .bottom {
+  width: 100%;
+  padding: 0 41px;
+  position: relative;
+}
+.body.nft-creators-page .fourth-block .container .bottom .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(270deg, rgb(36, 46, 49) 0%, rgba(36, 46, 49, 0.95) 10%, rgba(217, 217, 217, 0) 20%, rgba(217, 217, 217, 0) 87%, rgba(36, 46, 49, 0.95) 100%);
 }
 .body.nft-creators-page .fourth-block .container .bottom .many-comments {
   width: 100%;
