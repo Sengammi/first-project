@@ -1349,6 +1349,9 @@ a{
               line-height: 16px;
               text-align: justify;
               color: rgba(0, 0, 0, 0.8);
+              span{
+                font-weight: 700;
+              }
             }
             .button{
               width: 92px;
@@ -1543,6 +1546,301 @@ a{
                   color: rgba(0, 0, 0, 0.4);
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    .blockchain-block{
+      width: 1170px;
+      margin: 355px auto 0;
+      h1{
+        margin-bottom: 97px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: #000000;
+      }
+      .supporting-blockchains{
+        display: flex;
+        .blockchain{
+          width: 275px;
+          height: 275px;
+          background: #E5E8ED;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+          border-radius: 25px;
+          justify-content: center;
+          text-align: center;
+          &.center{
+            margin: 0 auto;
+          }
+          .blockchain-logo-position{
+            margin-top: 15px;
+            height: 182px;
+            align-items: center;
+            display: flex;
+            .blockchain-img{
+              margin: auto;
+            }
+          }
+        }
+        h3{
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000000;
+        }
+        h6{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration-line: underline;
+          color: #747474;
+        }
+      }
+    }
+  }
+  .fourth-block{
+    width: 100%;
+    height: 900px;
+    background: #242E31;
+    align-items: center;
+    display: flex;
+    padding: 0 41px;
+    margin-bottom: 98px;
+    .container{
+      margin: 0 auto;
+      .top{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        .left-block, .right-block{
+          width: 50%;
+          padding-left: 56px;
+          h4{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: #08BDD4;
+          }
+          h1{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #FFFFFF;
+          }
+          p{
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-right: 90px;
+            span{
+              font-weight: 700;
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+        .right-block{
+          padding-top: 23px;
+        }
+        .vertical-line{
+          height: 122px;
+          width: 1px;
+          position: absolute;
+          background-color: #FFFFFF;
+        }
+      }
+      .bottom{
+        .many-comments{
+          width: 100%;
+          margin-top: 67px;
+        }
+      }
+    }
+  }
+  .fifth-block{
+    margin-top: 215px;
+    justify-content: center;
+    .integration{
+      margin: 0 auto;
+      width: 1170px;
+      display: flex;
+      align-items: center;
+      .left-block{
+        margin: auto 0;
+        .head-text{
+          margin-bottom: 47px;
+          h4{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: #08BDD4;
+          }
+          h1{
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 30px;
+            color: #000000;
+          }
+        }
+        .elements{
+          margin-bottom: 48px;
+          .element{
+            display: flex;
+            align-items: center;
+            margin-top: 17px;
+            .integration-svg{
+              margin: auto 21px auto 0;
+            }
+            .text-container{
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(0, 0, 0, 0.8);
+              }
+              p{
+                margin-top: 4px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(0, 0, 0, 0.8);
+              }
+            }
+          }
+        }
+        .button{
+          width: 153px;
+          height: 39px;
+          border: 1px solid #000000;
+          border-radius: 23.5px;
+          display: flex;
+          cursor: pointer;
+          a{
+            margin: auto;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+          &:active{
+            background: #000000;
+            a{
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .right-block{
+        position: relative;
+        .big-window-img{
+          width: 626px;
+          height: 471px;
+        }
+        .added-fake-code{
+          position: absolute;
+          height: 80px;
+          left: 210px;
+          top: 346px;
+          overflow: hidden;
+        }
+      }
+    }
+    .added-info-block{
+      margin: 412px auto 0;
+      width: 1170px;
+      align-items: center;
+      text-align: center;
+      h1{
+        margin: 0 62px 37px;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        color: #000000;
+      }
+      p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .bottom-contacts{
+        margin-top: 74px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        .half-block{
+          width: 50%;
+          display: flex;
+          .left-block{
+            margin: 0 110px 0 auto;
+          }
+          .right-block{
+            margin: 0 auto 0 110px;
+          }
+        }
+        .contact-images{
+          width: 38px;
+        }
+        #discord-contact-images{
+          -webkit-mask-size: cover;
+          mask-size: cover;
+          -webkit-mask-image: url("../svg/Discord.svg");
+          mask-image: url("../svg/Discord.svg");
+          background-color: #97A3B6; // or any color of your choice.
+          width: 38px;
+        }
+
+        h5{
+          margin-top: 15px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+        h6{
+          margin-top: 4px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.8);
+        }
+        .vertical-line{
+          position: absolute;
+          width: 1px;
+          height: 125px;
+          background-color: #97A3B6;
+        }
+        .button{
+          &.first{
+            width: 113px;
+          }
+          &.second{
+            width: 172px;
+          }
+          margin: 37px auto 0;
+          border: 1px solid #000000;
+          border-radius: 23.5px;
+          display: flex;
+          cursor: pointer;
+          height: 39px;
+          a{
+            margin: auto;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+          &:active{
+            background: #000000;
+            a{
+              color: #FFFFFF;
             }
           }
         }
