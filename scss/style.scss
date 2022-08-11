@@ -85,7 +85,6 @@ a{
       margin: auto auto;
       .nav-pages{
         margin-right: 33px;
-        height: 11px;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
@@ -113,18 +112,27 @@ a{
 }
 
 
+.home-gradient-background{
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  top: 0;
+  background: linear-gradient(180deg, #F8F9FA 0%, #D8DFE1 100%);
+  z-index: -2;
+  display: flex;
+  align-items: end;
+  .cut-gradient-background{
+    height: 100px;
+    margin-top: auto;
+    background-color: white;
+    width: 100%;
+  }
+}
+
 // Home page body
 
 
 .body.home-page{
-  .home-gradient-background{
-    position: absolute;
-    width: 100%;
-    height: 900px;
-    top: 0;
-    background: linear-gradient(180deg, #F8F9FA 0%, #D8DFE1 100%);
-    z-index: -1;
-  }
   justify-content: center;
   .first-block{
     width: 1170px;
@@ -1108,10 +1116,10 @@ a{
         margin-left: 66px;
 
         .nav-pages{
+          font-weight: 400;
           font-size: 12px;
-          margin-right: 33px;
-          margin-top: 8px;
-          color: #FFFFFF;
+          line-height: 14px;
+          color: rgba(255, 255, 255, 0.8);
           &:hover, &.selected{
             color: rgba(255, 255, 255, 0.4);
           }
@@ -1143,8 +1151,6 @@ a{
     }
   }
 
-
-
   .footer{
     height: 100px;
     padding-top: 32px;
@@ -1164,11 +1170,10 @@ a{
         margin: auto auto;
         .nav-pages{
           margin-right: 33px;
-          height: 11px;
           font-weight: 400;
           font-size: 12px;
           line-height: 14px;
-          color: #FFFFFF;
+          color: rgba(255, 255, 255, 0.8);
           &:hover, &.selected{
             color: rgba(255, 255, 255, 0.4);
           }
